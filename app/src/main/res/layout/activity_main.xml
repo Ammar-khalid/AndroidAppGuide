@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/androidrobots"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="8dp"
+        android:background="@color/purple_200"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="4dp"
+        >
+
+ <!-- TODO 1 : Change scaleType of ImageView to centerInside -->
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="25dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user"
+        android:layout_gravity="center"
+        />
+
+        <!-- TODO 2 : In next  EditText Add meaningful hint to edit text -->
+        <!-- TODO 3 : In next  EditText ; Add input type suitable for email -->
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        >
+
+        <!-- TODO 4 : Change scaleType of ImageView to centerInside -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="25dp"
+            android:scaleType="matrix"
+            android:src="@drawable/padlock"
+            android:layout_gravity="center"
+            />
+
+        <!-- TODO 5 : In next  EditText Add meaningful hint to edit text -->
+        <!-- TODO 6 : In next  EditText ; Add input type suitable for (numbers + characters ) password -->
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        >
+
+
+
+        <!-- TODO 7 : In next  TextView ; change color of text to #E74C3C -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="45dp"
+           android:text="CAN'T LOGIN ?"
+            android:gravity="center|left"
+           android:textColor="#ffff"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember Me"
+            />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="log in"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <!-- TODO 8 : In next  TextView ; Add 12 sp size -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New to Android App Guide ?"
+        android:layout_gravity="center"/>
+
+        <!-- TODO 9 : In next  TextView ; Add 18 sp size -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPEN NEW ACCOUNT "
+        android:layout_gravity="center"
+        android:textColor="#3B5998"
+        />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
